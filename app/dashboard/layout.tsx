@@ -1,4 +1,13 @@
 import SideNav from "@/app/ui/dashboard/sidenav";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: {
+    template: "%s | NextJS Dashboard",
+    default: "NextJS Dashboard",
+  },
+  description: "The Next.js Dashboard built with App Router.",
+};
 export const experimental_ppr = true;
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
